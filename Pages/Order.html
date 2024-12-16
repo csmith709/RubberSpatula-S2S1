@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sprint 1 -->
+    <!-- Written by: Charity Smith -->
+    <!-- Group Members: Charity Smith, William Young, Edward Spurrell -->
+    <!-- Figma link: https://www.figma.com/file/HWZPACuGiRNrhLlvIv3N7M/Untitled?type=design&node-id=0%3A1&mode=design&t=0Q1KuJ40g0CVzOBn-1 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styleOrder.css"/>
+    <title>Order Now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logobox"><img src="../Photos/Logo.png" height="126px" width="126px" alt="rubber spatulat bakery" id="rubberspatulalogo"/></div>
+        <div class="topbox"><h1>The Rubber Spatula Bakery</h1></div>
+        <div class="buttonbox"><button class="navbuttonL"><a href="../Pages/Menu.html">Menu</a>
+        </button><button class="navbuttonR"><a href="../Pages/Home.html">Home</a></button></div>
+    </header>
+    <main>
+        <div class="hero-image"><div class="contentbox"><br/><h3>Order Here</h3><h4>Please select the items you you wish to oder from each category below as well as it's flavor and the quantity of items deired.</h4><br/><form action="/data" method="post">
+            <div>
+                <!-- name -->
+                <lable for="name">Name</lable>
+                <input type="text" 
+                name="name" id="name" 
+                autofocus 
+                autocomplete="given name"
+                placeholder="Enter your name here"
+                maxlength="40"
+                tabindex="1"
+                /></div><br/>
+                <!-- email and Card number -->
+                <div>
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="mail" autocomplete="email" placeholder="example@provider.com" maxlength="60" tabindex="2"
+                />  <label for="creditcard">Credit Number</label>
+                <input type="cc number" name="credit" id="creditnum" autocomplete="credit number" placeholder="xxxx xxxx xxxx xxxx" maxlength="19" tabindex="3"
+                /></div>
+                <div><label for="date">Date of Order Pickup:</label>
+                    <input type="date"id="date" name="date" tabindex="3"/></div>
+                    <br/>
+                    <hr/>
+                    <br/><span id="leftalign">
+                    <!-- Sweet Breads -->
+                    <div>
+                        <input type="radio"/>  Sweet Breads:  <label for="Item1">Item</label>
+                        <input type="text" id="item1" tabindex="4" list="Items1"/>
+                        <datalist id="Items1">
+                            <option value="Banana Bread"></option>
+                            <option value="Lemon Blueberry Focaccia"></option>
+                            <option value="Cinnamon Raisin Bread"></option>
+                            <option value="Brioche"></option>
+                            <option value="Pain au Chocolate"></option>
+                        </datalist><label for="Quantity1">Quantity</label>
+                        <input type="text" id="quantity1" tabindex="5" list="Quantity1"/>
+                        <datalist id="Quantity1">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="4"></option>
+                            <option value="6"></option>
+                
+                        </datalist></div>
+                        <!-- Savory Breads -->
+                        <div>
+                            <input type="radio"/>  Savory Breads:  <label for="Item2">Item</label>
+                            <input type="text" id="item2" tabindex="6" list="Items2"/>
+                            <datalist id="Items2">
+                                <option value="Sourdough Loaf"></option>
+                                <option value="Olive and Thyme Focaccia"></option>
+                                <option value="French Baguette"></option>
+                                <option value="House White Bread"></option>
+                                <option value="House Whole Wheat Bread"></option>
+                                <option value="Croissant"></option>
+                            </datalist><label for="Quantity1">Quantity</label>
+                            <input type="text" id="quantity1" tabindex="7" list="Quantity1"/>
+                            <datalist id="Quantity1">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="4"></option>
+                                <option value="6"></option>
+                                
+                            </datalist></div>
+                            <!-- Cupcakes -->
+                            <div><input type="radio"/>  Cupcakes:       <label for="Item3">Item</label>
+                                <input type="text" id="item3" tabindex="8" list="Items3"/>
+                                <datalist id="Items3">
+                                    <option value="Chocolate Lovers"></option>
+                                    <option value="Vanilla Bean"></option>
+                                    <option value="Chocolate Orange"></option>
+                                    <option value="Dulche de Leche"></option>
+                                    <option value="Chocolate Peanut Butter"></option>
+                                    <option value="Rainbow Swirl"></option>
+                                    <option value="Sweet and Salty"></option>
+                                </datalist><label for="Quantity2">Quantity</label>
+                                <input type="text" id="quantity2" tabindex="9" list="Quantity2"/>
+                                <datalist id="Quantity2">
+                                    <option value="1"></option>
+                                    <option value="4"></option>
+                                    <option value="6"></option>
+                                    <option value="12"></option>
+                                    <option value="24"></option>
+                                </datalist></div>
+                                <!-- Cakes -->
+                                <div>
+                                    <input type="radio"/>  Cakes:  <label for="Item3.1">Item</label>
+                                    <input type="text" id="item3.1" tabindex="10" list="Items3.1"/>
+                                    <datalist id="Items3.1">
+                                        <option value="Chocolate Lovers"></option>
+                                        <option value="Vanilla Bean"></option>
+                                        <option value="Chocolate Orange"></option>
+                                        <option value="Dulche de Leche"></option>
+                                        <option value="Chocolate Peanut Butter"></option>
+                                        <option value="Rainbow Swirl"></option>
+                                        <option value="Sweet and Salty"></option>
+                                        <option value="Carrot Cake"></option>
+                                        <option value="Ice Cream Cake"></option>
+                                    </datalist><label for="Quantity3">Quantity</label>
+                                    <input type="text" id="quantity3" tabindex="11" list="Quantity3"/>
+                                    <datalist id="Quantity3">
+                                        <option value="1 slice"></option>
+                                        <option value="9 inch, 2 layers"></option>
+                                        <option value="12 inch, 2 layers"></option>
+                                        <option value="9 inch, 3 layers"></option>
+                                        <option value="12 inch, 3 layers"></option>
+                                    </datalist></div>
+                                    <!-- Muffins -->
+                                    <div>
+                                        <input type="radio"/>  Muffins:  <label for="Item4">Item</label>
+                                        <input type="text" id="item4" tabindex="12" list="Items4"/>
+                                        <datalist id="Items4">
+                                            <option value="Double Chocolate"></option>
+                                            <option value="Cinnamon Sugar"></option>
+                                            <option value="Blueberry Bran"></option>
+                                            <option value="Tomato Soup"></option>
+                                            <option value="Lemon Cranberry"></option>
+                                            <option value="Apple Strussel"></option>
+                                        </datalist><label for="Quantity4">Quantity</label>
+                                        <input type="text" id="quantity4" tabindex="13" list="Quantity4"/>
+                                        <datalist id="Quantity4">
+                                            <option value="1"></option>
+                                            <option value="6"></option>
+                                            <option value="12"></option>
+                                        </datalist></div>
+                                        <!-- Bagels -->
+                                        <div>
+                                            <input type="radio"/>  Bagels:  <label for="Item5">Item</label>
+                                            <input type="text" id="item5" tabindex="14" list="Items5"/>
+                                            <datalist id="Items5">
+                                                <option value="Blueberry"></option>
+                                                <option value="Cinnamon Raisin"></option>
+                                                <option value="Everything"></option>
+                                                <option value="Plain"></option>
+                                                <option value="Multigran"></option>
+                                                <option value="Chocolate Chip"></option>
+                                            </datalist><label for="Quantity4">Quantity</label>
+                                            <input type="text" id="quantity4" tabindex="15" list="Quantity4"/>
+                                            <datalist id="Quantity4">
+                                                <option value="1"></option>
+                                                <option value="6"></option>
+                                                <option value="12"></option>
+                                            </datalist></div>
+                                            <!-- Pretzels -->
+                                        <div>
+                                            <input type="radio"/>  Pretzels:  <label for="Item6">Item</label>
+                                            <input type="text" id="item6" tabindex="16" list="Items6"/>
+                                            <datalist id="Items6">
+                                                <option value="Plain"></option>
+                                                <option value="Cinnamon Sugar"></option>
+                                                <option value="Everything"></option>
+                                            </datalist><label for="Quantity4">Quantity</label>
+                                            <input type="text" id="quantity4" tabindex="17" list="Quantity4"/>
+                                            <datalist id="Quantity4">
+                                                <option value="1"></option>
+                                                <option value="6"></option>
+                                                <option value="12"></option>
+                                            </datalist></div>
+                                            <!-- Cookies -->
+                                    <div>
+                                        <input type="radio"/>  Cookies:  <label for="Item7">Item</label>
+                                        <input type="text" id="item7" tabindex="18" list="Items7"/>
+                                        <datalist id="Items7">
+                                        <option value="Double Chocolate"></option>
+                                        <option value="Chocolate Chip"></option>
+                                        <option value="Snickerdoodles"></option>
+                                        <option value="Russian Butter Cookies"></option>
+                                        <option value="Almond Shortbread"></option>
+                                        <option value="Peanut Butter Noodle Cookies"></option>
+                                        <option value="Kalterhund"></option>
+                                    </datalist><label for="Quantity5">Quantity</label>
+                                    <input type="text" id="quantity5" tabindex="19" list="Quantity5"/>
+                                    <datalist id="Quantity5">
+                                        <option value="1"></option>
+                                        <option value="6"></option>
+                                        <option value="12"></option>
+                                        <option value="24"></option>
+                                    </datalist></div>
+                                    <!-- Pastries -->
+                                    <div>
+                                        <input type="radio"/>  Pastries:  <label for="Item8">Item</label>
+                                        <input type="text" id="item8" tabindex="20" list="Items8"/>
+                                        <datalist id="Items8">
+                                            <option value="Blondie"></option>
+                                            <option value="Brownies"></option>
+                                            <option value="Lemon Meringue Macarons"></option>
+                                            <option value="Raspberry Matcha Macarons"></option>
+                                            <option value="Chocolater Creme Macarons"></option>
+                                            <option value="Vanilla Dip Donut"></option>
+                                            <option value="Apple Fritter Donut"></option>
+                                            <option value="Honey Cruller Donut"></option>
+                                            <option value="Apple Tart"></option>
+                                            <option value="Rainbow Fruit Tart"></option>
+                                        </datalist><label for="Quantity4">Quantity</label>
+                                        <input type="text" id="quantity4" tabindex="21" list="Quantity4"/>
+                                        <datalist id="Quantity4">
+                                            <option value="1"></option>
+                                            <option value="6"></option>
+                                            <option value="12"></option>
+                                        </datalist></div><br/>
+
+                     <div>
+                    <label for="comments">Order Comments</label>
+            <textarea name="comments" id="comments" placeholder="Enter any order instructions or allergies here" tabindex="22" cols="30" rows="4"></textarea></div></span><br/><button id="myButton">Submit Order</button>
+ 
+            <script>
+            document.getElementById('myButton').addEventListener('click', function() {
+              alert('Your order has been submitted! See your email for order details.');
+            });
+            </script>
+            </form></div></div>
+    </main>
+    
+</body>
+</html>
